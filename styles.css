@@ -1,0 +1,172 @@
+/*
+
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+Dark cyan: hsl(185, 75%, 39%)
+Very dark desaturated blue: hsl(229, 23%, 23%)
+Dark grayish blue: hsl(227, 10%, 46%)
+
+### Neutral
+
+Dark gray: hsl(0, 0%, 59%)
+
+## Typography
+
+### Body Copy
+
+- Font size (name and stats): 18px
+
+### Font
+
+- Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
+- Weights: 400, 700
+
+font-family: 'Kumbh Sans', sans-serif;
+
+
+<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+<style>
+  .attribution { font-size: 11px; text-align: center; }
+  .attribution a { color: hsl(228, 45%, 44%); }
+</style>
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  background-color: hsl(185, 75%, 39%);
+  background-image: url("./images/bg-pattern-top.svg"), url("./images/bg-pattern-bottom.svg");
+  background-position: -400px -600px, 600px 300px;
+  background-repeat: no-repeat;
+}
+
+.card {
+  width: 350px;
+  height: 370px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+}
+
+/* top-container */
+
+.top-container img {
+  height: 140px;
+  border-radius: 10px 10px 0 0;
+}
+
+/* middle-container */
+
+.middle-container {
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.middle-container span {
+  padding-left: 5px;
+  font-weight: lighter;
+  color: hsl(227, 10%, 46%);
+}
+
+.middle-container h1 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.middle-container p {
+  margin: 10px 0 20px 0;
+  font-size: 14px;
+  color: hsl(227, 10%, 46%);
+  padding-bottom: 40px;
+}
+
+.middle-container img {
+  border-radius: 50%;
+  border: 5px solid white;
+  position: relative;
+  bottom: 15px;
+}
+
+/* bottom-container */
+
+.bottom-container {
+  height: 90px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 12px 0;
+}
+
+.bottom-container-left, .bottom-container-middle, .bottom-container-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+
+}
+
+.numbers {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.desciption {
+  font-size: 10px;
+  letter-spacing: 2px;
+  margin: 0;
+  color: hsl(227, 10%, 46%);
+
+}
+
+hr {
+  border-top: 1px solid hsl(0, 0%, 59%);
+  width: 347px;
+  margin: 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 768px)  {
+
+  body {
+    background-position: -700px -700px, 200px 200px;
+
+  }
+
+}
