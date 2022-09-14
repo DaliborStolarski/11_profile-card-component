@@ -53,14 +53,20 @@ body {
   font-family: 'Kumbh Sans', sans-serif;
   background-color: hsl(185, 75%, 39%);
   background-image: url("./images/bg-pattern-top.svg"), url("./images/bg-pattern-bottom.svg");
-  background-position: -400px -600px, 600px 300px;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .card {
   width: 350px;
   height: 370px;
-  margin: 100px auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -69,6 +75,7 @@ body {
   background-color: white;
   border-radius: 10px;
 }
+
 
 /* top-container */
 
@@ -155,18 +162,9 @@ hr {
 .attribution {
   font-size: 11px;
   text-align: center;
-  padding: 10px 0;
+  margin: 20px 0;
 }
 
 .attribution a {
   color: hsl(228, 45%, 44%);
-}
-
-@media (max-width: 768px)  {
-
-  body {
-    background-position: -700px -700px, 200px 200px;
-
-  }
-
 }
